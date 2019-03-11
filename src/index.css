@@ -1,16 +1,42 @@
 body {
-  width: 360px;
-  height: 640px;
-  text-align: center;
-  margin: 0 auto;
   padding: 0;
-  font-family: "Roboto Slab",
-    sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "Roboto Slab", monospace;
+}
+/*Global*/
+#root {
+  background-color: #141414;
+  color: white;
+  width: 360px;
+  height: 640px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+/*Main page*/
+#playBtn {
+  width: 85%;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  background-color: teal;
+  font: 30px bold;
+  color: white;
+}
+#playBtn:hover {
+  cursor: pointer;
+  background-color: rgb(0,145,145);
+}
+.currentMatches {
+  width: 30%;
+  max-height: 90px;
+  border-radius: 50%;
+}
+.currentMatches:hover{
+  opacity: 0.7;
 }
