@@ -14,7 +14,7 @@ export default class MainPage extends Component{
                 <h2>CWEEEEZY</h2>
                 <img alt="class icon" src="https://d3dxqwkfasz293.cloudfront.net/images/icons/tier/Rank_Icon_07_master.png" width="30%"/>
                 <p>{this.state.rank.toUpperCase()}</p>
-                <p>Elixir bar here</p>
+                <p id="eliBar">2500/3000</p>
                 <button onClick={()=>alert('this opens up a list of friends')} id="playBtn">NEW MATCH!</button>
                 <h4 style={{textAlign:'left',marginLeft:'10%'}}>CURRENT MATCHES</h4>
                 <img alt="img here" className="currentMatches" onClick={()=>this.enterMatch(0)}/>

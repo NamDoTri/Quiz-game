@@ -1,4 +1,4 @@
-body{
+body {
   padding: 0;
   font-family: "Roboto Slab", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -25,19 +25,29 @@ code {
   border-radius: 10px;
   border: none;
   background-color: teal;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font: 25px bold;
   color: white;
 }
+#eliBar {
+  margin: auto;
+  height: 15px;
+  font-size: 12px;
+  width: 85%;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  background: linear-gradient(to right, #11998e 0%, #38ef7d 100%);
+  margin-bottom: 10px;
+}
 #playBtn:hover {
   cursor: pointer;
-  background-color: rgb(0,145,145);
+  background-color: rgb(0, 145, 145);
 }
 .currentMatches {
   width: 30%;
   max-height: 90px;
   border-radius: 50%;
 }
-.currentMatches:hover{
+.currentMatches:hover {
   opacity: 0.7;
 }
