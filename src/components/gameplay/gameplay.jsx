@@ -4,7 +4,12 @@ class Gameplay extends Component {
   render() {
     return (
       <React.Fragment>
-        This is the gameplay{" "}
+        <img alt="topic icon"/>
+        <div>What is your sexuality?</div>
+        <button>Male</button>
+        <button>Male</button>
+        <button>Male</button>
+        <button>Male</button>
         <button onClick={()=>this.props.changeScreen(0)}>Change</button>
       </React.Fragment>
     );

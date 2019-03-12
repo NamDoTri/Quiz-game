@@ -8,16 +8,26 @@ import Match from './components/matchdata/match'
 
 class App extends Component {
   state = {
-    currentScreen: 2,
+    currentScreen: 0,
     matches: [
-      
-    ]
+      new Match("today","Dummy",10),
+      new Match("yesterday","Dima",10),
+      new Match("12 March","Dummy2",10),
+    ],
+    currentMatch: 0,
   };
 
   changeScreen = screenIndex => {
+    //change current showing screen
     let currentScreen = screenIndex;
     this.setState({ currentScreen: currentScreen });
   };
+  openMatch = index =>{
+    //pass the index of that match here
+    this.changeScreen(1);
+    let currentMatch = index;
+    this.setState({currentMatch})
+  }
 
   render() {
     //0: main page
@@ -27,9 +37,9 @@ class App extends Component {
     return (
       <React.Fragment>
         {this.state.currentScreen == 0 ? (
-          <MainPage changeScreen={this.changeScreen} />
+          <MainPage changeScreen={this.changeScreen} matches={this.state.matches} openMatch={this.openMatch}/>
         ) : this.state.currentScreen == 1 ? (
-          <MatchData changeScreen={this.changeScreen} />
+          <MatchData changeScreen={this.changeScreen} currentMatch={this.state.matches[this.state.currentMatch]}/>
         ) : this.state.currentScreen == 2 ? (
           <Gameplay changeScreen={this.changeScreen} />
         ) : (

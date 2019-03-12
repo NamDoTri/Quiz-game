@@ -1,4 +1,4 @@
-body {
+body{
   padding: 0;
   font-family: "Roboto Slab", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -25,7 +25,8 @@ code {
   border-radius: 10px;
   border: none;
   background-color: teal;
-  font: 30px bold;
+  font-family: 'Roboto', sans-serif;
+  font: 25px bold;
   color: white;
 }
 #playBtn:hover {

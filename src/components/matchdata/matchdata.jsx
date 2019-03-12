@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 class MatchData extends Component {
-  state = {};
+  state = {
+    match: this.props.currentMatch,
+  };
   render() {
     return (
       <React.Fragment>
-        This is the match data
-        <button onClick={()=>this.props.changeScreen(2)}>Change</button>
+        <h2>VS {this.state.match.opponent}</h2>
+        <button onClick={()=>this.props.changeScreen(2)}>Play</button>
+        <button onClick={()=>this.props.changeScreen(0)} >Back</button>
       </React.Fragment>
     );
   }
