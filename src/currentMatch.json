@@ -1,0 +1,104 @@
+{
+    "round1":[
+       {
+          "id":21,
+          "categoryId":6,
+          "categoryTitle":"Nature",
+          "question":"What fish does not have a swim bladder?",
+          "correctAnswer":"Shark",
+          "option1":"Dolphin",
+          "option2":"Pollock",
+          "option3":"Whale",
+          "option4":"Dorido",
+          "option5":"Salmon"
+       },
+       {
+          "id":18,
+          "categoryId":6,
+          "categoryTitle":"Nature",
+          "question":"How many neck vertebrae does a giraffe have?",
+          "correctAnswer":"7",
+          "option1":"8",
+          "option2":"10",
+          "option3":"14",
+          "option4":"3.5",
+          "option5":"32"
+       },
+       {
+          "id":19,
+          "categoryId":6,
+          "categoryTitle":"Nature",
+          "question":"Which of the following category does coral belong to?",
+          "correctAnswer":"Animal",
+          "option1":"Plant",
+          "option2":"Parasite",
+          "option3":"Fungus",
+          "option4":"Eubacteria",
+          "option5":"Amphibian"
+       }
+    ],
+    "round2":[
+       {
+          "id":55,
+          "categoryId":11,
+          "categoryTitle":"Fashion & Style",
+          "question":"Which of the following is not considered the fashion capital?",
+          "correctAnswer":"Prague",
+          "option1":"New York",
+          "option2":"London",
+          "option3":"Paris",
+          "option4":"",
+          "option5":""
+       },
+       {
+          "id":54,
+          "categoryId":11,
+          "categoryTitle":"Fashion & Style",
+          "question":"Which of the following cities is considered the fashion capital?",
+          "correctAnswer":"Milan",
+          "option1":"Washington D.C",
+          "option2":"Berlin",
+          "option3":"Vienna",
+          "option4":"Barcelona",
+          "option5":"Florence"
+       }
+    ],
+    "round3":[
+       {
+          "id":41,
+          "categoryId":8,
+          "categoryTitle":"Technology",
+          "question":"Who wrote the first machine algorithm?",
+          "correctAnswer":"Ada Lovelace",
+          "option1":"Blaise Pascal",
+          "option2":"Albert Einstein",
+          "option3":"Bill Gate",
+          "option4":"René Descartes",
+          "option5":"Alan Turing"
+       },
+       {
+          "id":60,
+          "categoryId":8,
+          "categoryTitle":"Technology",
+          "question":"What does the term SMS stands for?",
+          "correctAnswer":"Short Message Service",
+          "option1":"Stupid and Messy System",
+          "option2":"Sending Messages Service",
+          "option3":"Sending Messages System",
+          "option4":"",
+          "option5":""
+       },
+       {
+          "id":53,
+          "categoryId":8,
+          "categoryTitle":"Technology",
+          "question":"What is the first iOS that supports Touch ID?",
+          "correctAnswer":"iOS 7",
+          "option1":"iOS 6.3",
+          "option2":"iOS 10",
+          "option3":"iOS 8",
+          "option4":"iOS7.1",
+          "option5":"iOS 7.2.1"
+       }
+    ]
+ }
