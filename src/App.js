@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
 import MainPage from "./components/mainpage/mainpage";
-import MatchData from "./components/matchdata/matchdata";
+import MatchResult from "./components/matchdata/matchdata";
 import CurrentMatches from "./components/matchdata/currentMatches";
 import Gameplay from "./components/gameplay/gameplay";
 import Match from './components/matchdata/match'
 
 class App extends Component {
   state = {
-    currentScreen: 0,
+    currentScreen: 2,
     matches: [
       new Match("today","Dummy",10),
       new Match("yesterday","Dima",10),
@@ -39,7 +39,7 @@ class App extends Component {
         {this.state.currentScreen == 0 ? (
           <MainPage changeScreen={this.changeScreen} matches={this.state.matches} openMatch={this.openMatch}/>
         ) : this.state.currentScreen == 1 ? (
-          <MatchData changeScreen={this.changeScreen} currentMatch={this.state.matches[this.state.currentMatch]}/>
+          <MatchResult changeScreen={this.changeScreen} currentMatch={this.state.matches[this.state.currentMatch]}/>
         ) : this.state.currentScreen == 2 ? (
           <Gameplay changeScreen={this.changeScreen} />
         ) : (

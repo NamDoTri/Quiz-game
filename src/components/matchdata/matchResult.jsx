@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-class MatchData extends Component {
+class MatchResult extends Component {
   state = {
     match: this.props.currentMatch,
   };
@@ -14,4 +14,4 @@ class MatchData extends Component {
   }
 }
 
-export default MatchData;
+export default MatchResult;
