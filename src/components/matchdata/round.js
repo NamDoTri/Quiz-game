@@ -1,14 +1,13 @@
 import Question from './question';
 
 export default class Round {
-  constructor(topic, numOfQs, currentTurn) {
-    let data = require('../../currentMatch.json');
-    
+  constructor(topic, numOfQs, currentTurn, roundData) {
+    let data = roundData;    
     this.topic = topic;
     this.numberOfQuestions = numOfQs;
     this.questions=[];
     for(let i = 0; i<this.numberOfQuestions;i++){
-        let qData = data['round1'][i];
+        let qData = data['questions'][i];
         this.questions.push( new Question(qData['question'], qData['correctAnswer'], [qData['option1'], qData['option2'],qData['option3'], qData['option4'] ]));
     }
     this.currentTurn = currentTurn;
