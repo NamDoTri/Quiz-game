@@ -6,7 +6,7 @@ class MatchResult extends Component {
   render() {
     return (
       <React.Fragment>
-        <h2>VS {this.state.match.opponent}</h2>
+        <h2>VS {this.state.match.matchData.opponent}</h2>
         <button onClick={()=>this.props.changeScreen(2)}>Play</button>
         <button onClick={()=>this.props.changeScreen(0)} >Back</button>
       </React.Fragment>
