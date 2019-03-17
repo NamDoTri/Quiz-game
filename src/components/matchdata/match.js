@@ -1,8 +1,8 @@
 import Round from "./round";
 
-class Match {
+export default class Match {
   constructor(date, opponent, bounty,matchdata=[]) {
-    //match data is a json file
+    //match data is supposed to be a json file
     this.dateStarted = date;
     this.opponent = opponent;
     this.reward = bounty;
@@ -26,4 +26,3 @@ class Match {
 }
 
 
-export default Match;
